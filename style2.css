@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #003366;
+    font-family: Arial;
+    color: white;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #45a049;
+    border-radius: 6px;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+}
+.back{
+    padding:10px 30px;
+    position: absolute;
+    top:30px;
+    right:40px;
+    border-radius: 5px;
+    color: white;
+    background-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: none;
+    transition: transform 0.3s ease-in-out;
+}
+.back:hover{
+    transform: scale(0.95);
+}
+table {
+    width: 100%;
+    width: 90%;
+    margin-bottom: 100px;
+    border-collapse: collapse;
+    position: absolute;
+    top:400px;
+    left:70px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+th {
+    background-color: #45a049;
+}
+th,td {
+    padding: 10px;
+    text-align: center;
+}
+td{
+    height: 35px;
+}
+td a{
+    text-decoration: none;
+    color: white;
+}
+tbody tr:nth-child(odd) {
+    background-color: #45a049;
+}
+tbody tr:nth-child(even) {
+    background-color: #003366;
+}
+.View{
+    width:500px;
+    height: 300px;
+    position:absolute;
+    top:90px;
+    left:32%;
+    border-radius: 10px;
+    background-color: #45a049;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    margin: 20px 0 30px 0 ;
+}
+input{
+    width:90%;
+    height: 45px;
+    border: none;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+.View button{
+    width:150px;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #003366;
+    color: white;
+}
+#error{
+    font-size: 16px;
+    color: red;
+    margin-top: 3px;
+    margin-bottom: 0;
+    text-align: center;
+    text-decoration: underline;
+} 

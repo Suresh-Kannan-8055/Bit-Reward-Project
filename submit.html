@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Project Details</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+        <p class="title">PROJECT DETAILS</p>
+        <a href="honerview.php" style="text-decoration: none;"><button class="rp-btn" type="submit" title="View Rp">View HP/RP</button></a>
+        <button class="back" type="submit" onclick="window.history.back();">Back</button>
+    </header>
+    <form class="main" action="submit.inc.php" method="post">
+        <p style="text-align: center; font-size: 35px; "><b>Registration</b></p>
+        <div class="left-box">
+            <label for="user_name">Name:</label><br>
+            <input type="text" name="user_name" placeholder="Name"><br>
+            <label for="register">Reg No:</label><br>
+            <input type="text" name="register" placeholder="Registation Number"><br>
+            <label for="department">Department:</label><br>
+            <select class="department" name="department" style="color: rgb(100, 100, 100);font-size: 15px;">
+                <option value="" disabled selected>Select-Department</option>
+                <option value="Aeronautical Engineering">Aeronautical Engineering</option>
+                <option value="Agricultural Engineering">Agricultural Engineering</option>
+                <option value="Automobile Engineering">Automobile Engineering</option>
+                <option value="Artificial Intelligence and Data Science	">Artificial Intelligence and Data Science	</option>
+                <option value="Artificial Intelligence and Machine Learning	">Artificial Intelligence and Machine Learning</option>
+                <option value="Biotechnology">Biotechnology</option>
+                <option value="Biomedical Engineering">Biomedical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Computer Technology">Computer Technology</option>
+                <option value="Computer Science & Business Systems">Computer Science & Business Systems</option>
+                <option value="Computer Science & Design">Computer Science & Design</option>
+                <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+                <option value="Electrical & Electronics Engineering">Electrical & Electronics Engineering</option>
+                <option value="Electronics & Communication Engineering">Electronics & Communication Engineering</option>
+                <option value="Electronics & Instrumentation Engineering">Electronics & Instrumentation Engineering	</option>
+                <option value="Food Technology">Food Technology</option>
+                <option value="Fashion Technology">Fashion Technology</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Information Science & Engineering">Information Science & Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Mechatronics Engineering">Mechatronics Engineering</option>
+                <option value="Textile Technology">Textile Technology</option>
+            </select><br>
+            <label for="Batch">Your Batch:</label><br>
+            <select class="batch" name="Batch" style="color: rgb(100, 100, 100);font-size: 15px;">
+                <option value="" disabled selected>Select-Batch</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+            </select><br>
+            <label for="Gender">Gender:</label><br>
+            <select class="gender" name="Gender" style="color: rgb(100, 100, 100);font-size: 15px;">
+                <option value="" disabled selected>Select-Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select><br>
+        </div>
+        <div class="right-box">
+            <label for="projectname">Project Name:</label><br>
+            <input type="text" name="projectname" placeholder="Project Name"><br>
+            <label for="members">Team Members:</label><br>
+            <select class="members" name="members">
+                <option value="" disabled selected>0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select><br>
+            <label for="duration">Duration :</label><br>
+            <input type="text" name="duration" placeholder="Project Duration"><br>
+            
+            <label for="outcome" >Outcomes:</label>
+            <textarea style="height: 80px;" name="outcome" placeholder="Outcomes"></textarea> <br>
+            <label for="link">Link:</label>
+            <input type="text" class="link" name="link" placeholder="Project Link">
+        </div>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html> 
